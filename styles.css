@@ -1,0 +1,17 @@
+body {
+    background-color: red;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+}
+
+.practice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
