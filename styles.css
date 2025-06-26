@@ -11,7 +11,7 @@
     height: 12vh;
     border-bottom: 2px solid black;
     display: flex;
-    background-color: aquamarine;
+    background-color: #3B3B3B;
     text-align: center;
 }
 
@@ -25,7 +25,15 @@
     text-align: center;
 }
 
-.nav-links .button:not(:last-child) {}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 /* Header Styling */
 .header-container {
@@ -56,6 +64,7 @@
     flex-direction: column;
     background-color: #2D383B;
     padding: 50px;
+    gap: 50px;
 }
 
 .left-text {
@@ -64,6 +73,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-left: 5px dotted #299883;
 }
 
 .right-text {
@@ -72,18 +84,22 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    border-right: 5px dotted #299883;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .text-container {
     width: 30%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .image-container {
     width: 70%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     gap: 25px;
+    justify-content: space-evenly;
 }
 
 .image-container img {
@@ -103,7 +119,7 @@
     border-top: 2px solid black;
     flex-direction: column;
     text-align: center;
-    background-color: blueviolet;
+    background-color: #8D3800;
     padding: 20px;
 }
 
@@ -114,6 +130,16 @@
     display: flex;
     justify-content: center;
     /* padding: 20px; */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .footer-links .button:hover {
@@ -143,11 +169,12 @@
 }
 
 .button:hover {
-    background-color: purple;
+    background-color: #2F2F2F;
 }
 
 a {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 h1 {
@@ -175,7 +202,7 @@ form {
     padding: 25px;
     padding-top: 80px;
     border: 2px solid black;
-    background-image: linear-gradient(#708d81ff 10%, 10%, white 90%);
+    background-image: linear-gradient(#7AA4A2 10%, 10%, #2F2F2F);
 }
 
 .formitem {
@@ -192,12 +219,12 @@ select {
 input {
     padding: 10px;
     border-radius: 5px;
-    background-color: #f4d58dff;
+    background-color: #3B3B3B;
     border: 2px solid #708d81ff;
 }
 
 input:hover {
-    background-color: #f7dfa9;
+    background-color: #515151;
 }
 
 .inputrow {
@@ -212,25 +239,29 @@ input:hover {
 }
 
 select {
-    background-color: #f4d58dff;
+    background-color: #3B3B3B;
     border: 2px solid #708d81ff;
 }
 
 select:hover {
-    background-color: #f7dfa9;
+    background-color: #515151;
+}
+
+option {
+    color: white;
 }
 
 option:hover {
-    background-color: #f7dfa9;
+    background-color: #515151;
 }
 
 textarea {
-    background-color: #f4d58dff;
+    background-color: #3B3B3B;
     border: 2px solid #708d81ff;
 }
 
 textarea:hover {
-    background-color: #f7dfa9;
+    background-color: #515151;
 }
 
 .radio {
